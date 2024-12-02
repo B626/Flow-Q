@@ -1,8 +1,13 @@
-"use client"
+"use client";
 
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import { useMediaQuery } from "@/hooks/use-media-query";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@radix-ui/react-accordion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@radix-ui/react-accordion";
 import { DialogDescription, DialogTitle } from "@radix-ui/react-dialog";
 import { ArrowRight, MenuIcon } from "lucide-react";
 import Image from "next/image";
@@ -62,10 +67,10 @@ export default function Home() {
               </DrawerTrigger>
               <DrawerContent>
                 <DialogTitle color="black" className="text-[#000]">
-                  Menu nibba
+                  Menu
                 </DialogTitle>
                 <DialogDescription color="black" className="text-[#000]">
-                  Niaaaaa
+                  Description menu
                 </DialogDescription>
                 ?
               </DrawerContent>
@@ -74,7 +79,7 @@ export default function Home() {
         </div>
       </header>
       <main className="min-h-[100vh] flex flex-col">
-        <section className="w-[100%] pt-[30px] pb-[70px]">
+        <section className="w-[100%] pt-[30px] pb-[35px]">
           <div className="m-[0_auto] relative sm:p-[0_20px] w-[100%] flex justify-center flex-col items-center">
             <h1 className="leading-[110%] text-light-purple uppercase text-center font-montserrat font-[600] sm:text-[clamp(2.8125rem,-1.3125rem+27.5vw,6.25rem)]">
               Flowq
@@ -105,10 +110,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section>
+        <section className="pb-[30px]">
           <div className="m-[0_auto] relative sm:p-[0_20px] w-[100%]">
             <div>
-              <p className="uppercase font-prompt color-light-beige text-center mb-[15px] text-[11px]">
+              <p className="uppercase font-prompt color-light-beige text-center mb-[10px] text-[11px]">
                 We provide
               </p>
               <div>
@@ -120,7 +125,7 @@ export default function Home() {
                     <AccordionTrigger className="uppercase text-[25px] text-center leading-[120%] font-[300]">
                       Fresh bouqets
                     </AccordionTrigger>
-                    <AccordionContent className="mt-[15px] flex flex-col">
+                    <AccordionContent className="accordion-content mt-[15px] flex flex-col">
                       Brighten any moment with our hand-crafted bouquets,
                       perfect for birthdays, anniversaries, or just because. Our
                       florists create beautiful arrangements using the freshest
@@ -141,7 +146,7 @@ export default function Home() {
                     <AccordionTrigger className="uppercase text-[25px] text-center leading-[120%] font-[300]">
                       Event Floral Design
                     </AccordionTrigger>
-                    <AccordionContent className="mt-[15px] flex flex-col">
+                    <AccordionContent className="accordion-content mt-[15px] flex flex-col">
                       Brighten any moment with our hand-crafted bouquets,
                       perfect for birthdays, anniversaries, or just because. Our
                       florists create beautiful arrangements using the freshest
@@ -162,7 +167,7 @@ export default function Home() {
                     <AccordionTrigger className="uppercase text-[25px] text-center leading-[120%] font-[300]">
                       Flower Subscriptions
                     </AccordionTrigger>
-                    <AccordionContent className="mt-[15px] flex flex-col">
+                    <AccordionContent className="accordion-content mt-[15px] flex flex-col">
                       Brighten any moment with our hand-crafted bouquets,
                       perfect for birthdays, anniversaries, or just because. Our
                       florists create beautiful arrangements using the freshest
@@ -183,7 +188,7 @@ export default function Home() {
                     <AccordionTrigger className="uppercase text-[25px] text-center leading-[120%] font-[300]">
                       Custom Arrangements
                     </AccordionTrigger>
-                    <AccordionContent className="mt-[15px] flex flex-col">
+                    <AccordionContent className="accordion-content mt-[15px] flex flex-col">
                       Brighten any moment with our hand-crafted bouquets,
                       perfect for birthdays, anniversaries, or just because. Our
                       florists create beautiful arrangements using the freshest
@@ -204,7 +209,7 @@ export default function Home() {
                     <AccordionTrigger className="uppercase text-[25px] text-center leading-[120%] font-[300]">
                       Same-Day Delivery
                     </AccordionTrigger>
-                    <AccordionContent className="mt-[15px] flex flex-col">
+                    <AccordionContent className="accordion-content mt-[15px] flex flex-col">
                       Brighten any moment with our hand-crafted bouquets,
                       perfect for birthdays, anniversaries, or just because. Our
                       florists create beautiful arrangements using the freshest
@@ -225,7 +230,7 @@ export default function Home() {
                     <AccordionTrigger className="uppercase text-[25px] text-center leading-[120%] font-[300]">
                       Indoor Arrangements
                     </AccordionTrigger>
-                    <AccordionContent className="mt-[15px] flex flex-col">
+                    <AccordionContent className="accordion-content mt-[15px] flex flex-col">
                       Brighten any moment with our hand-crafted bouquets,
                       perfect for birthdays, anniversaries, or just because. Our
                       florists create beautiful arrangements using the freshest
@@ -246,7 +251,7 @@ export default function Home() {
                     <AccordionTrigger className="uppercase text-[25px] text-center leading-[120%] font-[300]">
                       Packages & Add-ons
                     </AccordionTrigger>
-                    <AccordionContent className="mt-[15px] flex flex-col">
+                    <AccordionContent className="accordion-content mt-[15px] flex flex-col">
                       Brighten any moment with our hand-crafted bouquets,
                       perfect for birthdays, anniversaries, or just because. Our
                       florists create beautiful arrangements using the freshest
@@ -262,6 +267,192 @@ export default function Home() {
                   </AccordionItem>
                 </Accordion>
               </div>
+            </div>
+          </div>
+        </section>
+        <section className="pt-[30px]  pb-[250px]">
+          <div className="m-[0_auto] relative sm:p-[0_0px] w-[100%]">
+            <div>
+              <p className="uppercase font-prompt color-light-beige text-center mb-[10px] text-[11px]">
+                About us
+              </p>
+              <h2
+                className="uppercase text-[35px] font-prompt text-center 
+              leading-[110%] mb-[25px]"
+              >
+                explore floral{" "}
+                <span className="text-light-beige">world with flowQ</span>
+              </h2>
+              <div className="pr-[20px] relative">
+                <Image
+                  className="rounded-tr-[30px] rounded-br-[30px] h-[100%]"
+                  src="/img/explore/img.jpg"
+                  width={720}
+                  height={569}
+                  alt="flowers"
+                />
+                <div
+                  className="p-[35px_30px_40px] absolute bottom-[-230px] left-[50%] 
+                -translate-x-1/2 w-[80%] bg-[#7a7a7a30] rounded-[25px] backdrop-filter 
+                backdrop-blur-[20px]"
+                >
+                  <p className="text-[16px] leading-[120%]">
+                    Founded with a love for nature and a commitment to
+                    sustainability, we work with local growers to bring you the
+                    freshest blooms each season has to offer. Whether you’re
+                    celebrating a special moment or simply adding beauty to your
+                    day, we’re here to help make it memorable with flowers that
+                    speak from the heart.
+                  </p>
+                  <Image
+                    className="absolute bottom-0 right-0"
+                    src="/img/icons/arrow-down-right.svg"
+                    width={43}
+                    height={43}
+                    alt="see more"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="pt-[70px] pb-[40px]">
+          <div className="m-[0_auto] relative sm:p-[0_20px] w-[100%]">
+            <p className="uppercase font-prompt color-light-beige text-center mb-[10px] text-[11px]">
+              Achievments
+            </p>
+            <div className="flex flex-col gap-[60px] justify-center">
+              <h2 className="uppercase text-[35px] font-prompt font-[300] leading-[110%]">
+                Honoring Our Dedication to <br />
+                <span className="text-light-beige">Floral Excellence</span>
+              </h2>
+              <div className="flex flex-col gap-[50px]">
+                <div>
+                  <div className="flex items-center justify-center">
+                    <span className="text-[82px] text-light-green leading-[100%]">
+                      100
+                    </span>
+                    <Image
+                      src="/img/icons/leaf.svg"
+                      width={77}
+                      height={70}
+                      alt="leaf"
+                    />
+                  </div>
+                  <p className="text-center">eco-friendly certificated</p>
+                </div>
+                <hr />
+                <div>
+                  <div className="flex items-center justify-center">
+                    <span className="text-[82px] text-light-green leading-[100%]">
+                      50+
+                    </span>
+                  </div>
+                  <p className="text-center">years working</p>
+                </div>
+                <hr />
+                <div>
+                  <div className="flex items-center justify-center">
+                    <span className="text-[82px] text-light-green leading-[100%]">
+                      12
+                    </span>
+                  </div>
+                  <p className="text-center">floral design awards</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="pt-[30px]">
+          <div className="m-[0_auto] relative sm:p-[0_20px] w-[100%]">
+            <p className="uppercase font-prompt color-light-beige text-center mb-[10px] text-[11px] mb-[10px]">
+              Portfolio
+            </p>
+            <h2 className="uppercase text-[35px] font-prompt font-[300] leading-[110%] mb-[40px]">
+              Portfolio of floral creativity
+            </h2>
+            <div className="flex flex-col justify-center align-center">
+              <div className="grid grid-cols-[1fr_1fr] grid-rows-[1fr_1fr_1fr_1fr] mb-[25px]">
+                <div>
+                  <Image
+                    src="/img/portfolio/1.jpg"
+                    width={350}
+                    height={350}
+                    className="w-[100%] h-[100%] object-cover"
+                    alt="bouqette 1"
+                  />
+                </div>
+                <div className="w-[100%]">
+                  <Image
+                    src="/img/portfolio/2.jpg"
+                    width={350}
+                    height={350}
+                    className="w-[100%] h-[100%] object-cover"
+                    alt="bouqette 2"
+                  />
+                </div>
+                <div className="w-[100%]">
+                  <Image
+                    src="/img/portfolio/3.jpg"
+                    width={350}
+                    height={350}
+                    className="w-[100%] h-[100%] object-cover"
+                    alt="bouqette 3"
+                  />
+                </div>
+                <div className="w-[100%]">
+                  <Image
+                    src="/img/portfolio/4.jpg"
+                    width={350}
+                    height={350}
+                    className="w-[100%] h-[100%] object-cover"
+                    alt="bouqette 4"
+                  />
+                </div>
+                <div className="w-[100%]">
+                  <Image
+                    src="/img/portfolio/5.jpg"
+                    width={350}
+                    height={350}
+                    className="w-[100%] h-[100%] object-cover"
+                    alt="bouqette 5"
+                  />
+                </div>
+                <div className="w-[100%]">
+                  <Image
+                    src="/img/portfolio/6.jpg"
+                    width={350}
+                    height={350}
+                    className="w-[100%] h-[100%] object-cover"
+                    alt="bouqette 6"
+                  />
+                </div>
+                <div className="w-[100%]">
+                  <Image
+                    src="/img/portfolio/7.jpg"
+                    width={350}
+                    height={350}
+                    className="w-[100%] h-[100%] object-cover"
+                    alt="bouqette 7"
+                  />
+                </div>
+                <div className="w-[100%]">
+                  <Image
+                    src="/img/portfolio/8.jpg"
+                    width={350}
+                    height={350}
+                    className="w-[100%] h-[100%] object-cover"
+                    alt="bouqette 8"
+                  />
+                </div>
+              </div>
+              <Link
+                href={"/"}
+                className="uppercase font-prompt text-[18px] font-[300] text-center leading-[100%]
+            border-[1px] border-[solid] border-[#ffffff68] p-[4px_12px] rounded-[16px] inline-flex self-center"
+              >
+                Show more
+              </Link>
             </div>
           </div>
         </section>
